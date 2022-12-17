@@ -2,7 +2,7 @@
 
 Realtime face recognition using transfer learning.
 Here, I have applied MobileNetV2 to do prediction. My dataset contains 7 folders in which each of them contain images of faces of 7 differenet emotions:
-angry, disgust, fear, happy, neutral, sad and surprise. We will use this for training purpose. And the testing data contains the 7 folders with same emotions.
+angry, disgust, fear, happy, neutral, sad and surprise. I have used this for training purpose. And the testing data contains the 7 folders with same emotions.
 
 There are various types of  transfer learning model for image classification such as: 
 
