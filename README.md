@@ -10,7 +10,7 @@
 - [FER2013](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data)
 - [CK+](https://ieeexplore.ieee.org/document/5543262)
 - [JAFFE](https://www.researchgate.net/publication/220013358_The_japanese_female_facial_expression_jaffe_database)
-- [FERG](https://homes.cs.washington.edu/~deepalia/papers/deepExpr_accv2016.pdf)
+
 
 ## Prerequisites
 
