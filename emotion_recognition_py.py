@@ -1,5 +1,4 @@
 
-
 import random
 import tensorflow as tf
 import cv2
@@ -8,18 +7,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from tensorflow import keras
 from keras import layers
-
-print(tf.config.list_physical_devices('GPU'))
-# [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
-
-print(tf.test.is_built_with_cuda)
-# <function is_built_with_cuda at 0x7f4f5730fbf8>
-
-print(tf.test.gpu_device_name())
-# /device:GPU:0
-
-print(tf.config.get_visible_devices())
-# [PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'), PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
 
 
 img_array = cv2.imread("train\\0\\Training_3908.jpg")
@@ -31,12 +18,6 @@ classes = ["0", "1", "2", "3", "4", "5", "6"]
 
 img_size = 224  # ImageNet => 224 x 224
 new_array = cv2.resize(img_array, (img_size, img_size))
-plt.imshow(cv2.cvtColor(new_array, cv2.COLOR_BGR2RGB))
-plt.show()
-
-new_array.shape  # changing shape because we are using transfer learning and we are using deep learning classifier that takes
-# 224x224
-
 
 # # Read All the Images into a list called training_data
 
@@ -72,18 +53,14 @@ for features, label in training_data:
 
 # converting into 4 dimension. Mobilenet takes 4 dimension
 X = np.array(X).reshape(-1, img_size, img_size, 3)
-
-
 Y = np.array(Y)
 
 
 # # Deep Learning Model for training - Transfer Learning
 
-
 model = tf.keras.applications.MobileNetV2()  # pretrained model
 
 # # Transfer Learning
-
 
 base_input = model.layers[0].input  # taking the first layer
 
