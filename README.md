@@ -729,3 +729,5 @@ and more:
 <li>Output Channel</li>
 </ul>
 
+#This is how the architecture of the model looks like after adding few layers to the already trained model.
+![](https://i.ibb.co/NCdhdPw/Model-final-layers.png)
