@@ -1,4 +1,4 @@
-# Realtime-Face-Emotion-Recognition
+# Realtime-Face-Emotion-Recognition using Transfer Learning
 
 Realtime face recognition using transfer learning.
 Here, I have applied MobileNetV2 to do prediction. My dataset contains 7 folders in which each of them contain images of faces of 7 differenet emotions:
